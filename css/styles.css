@@ -200,7 +200,7 @@ cursor: pointer;
     background-size: cover;
 
     
-    /* background: #C4C4C4; */
+
 }
 
 .hero{
@@ -290,6 +290,125 @@ cursor: pointer;
 border: 1px solid rgba(0, 0, 0, 0.1);
 border-radius: 50%;
 background-color: var(--secondary-txt-cl);
+}
+/* modal box */
+.modal-title {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--capital-letters-cl);
+    text-align: center;
+}
+
+.modal-box {
+    padding: 40px;
+}
+
+.modal-label-box {
+    position: relative;
+}
+
+.modal-field {
+
+    display: block;
+    width: 448px;
+    height: 40px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+
+}
+
+.modal-field,
+.modal-comment {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline-width: 0;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.modal-icon {
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    --color1: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-label-box:focus-within>.modal-icon {
+
+    fill: var(--hover-txt-cl);
+}
+
+.modal-label-box:focus-within>.modal-field,
+.modal-label-box:focus-within>.modal-comment {
+    border-color: var(--hover-txt-cl);
+}
+
+.modal-comment {
+    display: block;
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    line-height: 1.71;
+}
+
+.checkbox>a {
+    text-underline-offset: 1px;
+    color: var(--hover-txt-cl);
+}
+
+.checkbox-icon {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--accent-txt-cl);
+    border-radius: 2px;
+    margin-right: 7px;
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-input:checked+.checkbox-icon {
+    border-color: var(--accent-txt-cl);
+    background-color: var(--accent-txt-cl);
+}
+
+.checkbox-input {
+    display: block;
+    position: relative;
+}
+
+.modal-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--accent-txt-cl);
+    transform: translateY(-18px);
 }
 /* peculiarities */
 .peculiarities-bgr-icon{
